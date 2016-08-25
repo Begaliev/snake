@@ -17,5 +17,14 @@ namespace Snake
                 pList.Add(p);
             }
         }
+
+        public override void Draw() // Наследник класс HorisontalLine переопределят метод Draw базового класса Figure
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            base.Draw();
+
+            Console.ForegroundColor = ConsoleColor.White;
+        }
     }
 }
