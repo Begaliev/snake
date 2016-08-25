@@ -8,7 +8,7 @@ namespace Snake
 {
     class Walls
     {
-        List<Figure> wallList;
+        List<Figure> wallList; // добавили несколько объектов класса Вертикальная линия и горизонтальная линия в список, который хранит любые фигуры*
 
         public Walls(int mapWidth, int mapHeight)
         {
@@ -30,7 +30,7 @@ namespace Snake
         {
             foreach (var wall in wallList)
             {
-                if (wall.IsHit(figure))
+                if (wall.IsHit(figure)) // *поэтому можно вызывать методы IsHit или Draw, описанные в классе Фигуры (это я описал св-во полиморфизма)
                 {
                     return true;
                 }

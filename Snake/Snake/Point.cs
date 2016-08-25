@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Point
+    class Point 
     {
-        public int x;
-        public int y;
-        public char sym;
+        // задаем, что любая точка содержит три переменные. Такие переменные называются полями класса
+        public int x; // 1-я - координата x
+        public int y; // 2-я - координата y
+        public char sym; // 3-я - символ
 
+        // описали функции(методы), которые выполняют некоторые действия с этими полями
         public Point()
         {
         }
